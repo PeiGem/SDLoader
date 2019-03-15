@@ -12,7 +12,7 @@ public class ClockwiseAnimation :AnimationDelegate{
         // Aniamtion
         let animation = CAAnimationGroup()
         animation.animations = [ opacityAnimation]
-        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
         animation.duration = duration
         animation.repeatCount = HUGE
         animation.isRemovedOnCompletion = false
